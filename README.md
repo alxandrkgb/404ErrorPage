@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{404ErrorPage.github.io}">
+    <a href="https://404ErrorPage.github.io">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{404ErrorPage.github.io}">
+    <a href="https://404ErrorPage.github.io">
       Solution
     </a>
     <span> | </span>
