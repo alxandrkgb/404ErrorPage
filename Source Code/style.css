@@ -1,138 +1,153 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-h1{
+h1 {
     margin: 20px;
     font-size: 20px;
     padding-left: 40px;
     font-family: 'Inconsolata', monospace;
 }
 
-.all-information{
+.all-information {
     font-family: 'Space Mono', monospace;
 }
 
-.scarecrow-image{
-    padding: 50px 20px 50px 140px;
+.scarecrow-image {
+    position: absolute;
+    left: 5.35%;
+    right: 57.21%;
+    top: 24.54%;
+    bottom: 34.03%;
 }
 
-img{
+img {
     width: 500px;
     height: 400px;
     float: left;
     margin: 0px 65px;
 }
 
-.information-container{
-    margin-top: -51px;
-}
 
 /* I have bad news for you*/
-h2{
-    font-size: 65px;
-    margin-right: 80px;
-    padding-right: 80px;
+
+h2 {
+    position: absolute;
+    width: 586px;
+    height: 190px;
+    left: 735px;
+    top: 155px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
     color: #333333;
 }
 
+
 /* Page may be removed */
-p{
+
+p {
+    position: absolute;
+    width: 381px;
+    height: 108px;
+    left: 736px;
+    top: 370px;
+    font-style: normal;
+    font-weight: 400;
     font-size: 24px;
-    padding-right: 280px;
-    margin: 50px 60px 45px 0px;
-    line-height: 35px;
-    text-align: justify;
+    line-height: 36px;
+    letter-spacing: -0.035em;
     color: #4F4F4F;
 }
 
+
 /*Back to Homepage*/
-button{
-    padding: 10px;
+
+button {
+    position: absolute;
     width: 216px;
     height: 68px;
+    left: 740px;
+    top: 530px;
     background: #333333;
-    color: #fff;
-    font-family: 'Space Mono', monospace;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     background: #706b6b;
     transition: 0.3s ease-in;
 }
 
+footer p {
+    position: absolute;
+    width: 287px;
+    height: 17px;
+    left: 577px;
+    top: 800px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    white-space: nowrap;
+    text-align: center;
+    color: #BDBDBD;
+}
 
-
-
-@media only screen and (max-width:620px){
-    .all-information{
+@media only screen and (max-width: 620px) {
+    .all-information {
         all: initial;
-        
     }
-
-    img{
+    img {
         all: initial;
         position: absolute;
         float: none;
-        width: 90%;
-        top: 0;
-        bottom: 0;
-        left: 40px;
+        width: 200%;
+        top: -120px;
+        left: 30px;
         right: 10px;
-        margin-top: 70px;                
+        margin-top: 70px;
         margin-bottom: 30px;
         padding-top: 50px;
     }
-
-    .information-container{
+    .information-container {
         all: initial;
         position: absolute;
         float: top;
     }
-
-    h2{
+    h2 {
         font-size: 48px;
-        padding-top: 400px;
-        margin-right: 0px;
-        padding-left: 50px;
-        bottom: 100px;
-        font-family: 'Space Mono', monospace;
+        font-family: 'Space Mono';
         line-height: 71px;
+        width: 350px;
+        height: 142px;
+        left: 24px;
+        top: 407px;
     }
-
-    p{
+    p {
         /*position: absolute;*/
-        text-align: unset;
-        padding: 0px 0px 0px 50px;
+        width: 328px;
+        height: 81px;
+        left: 23px;
+        top: 579px;
         font-family: 'Space Mono', monospace;
     }
-
-    button{
-        margin-left: 50px;
+    button {
+        width: 216px;
+        height: 68px;
+        left: 24px;
+        top: 770px;
     }
-
-    footer{
+    footer {
         all: initial;
         position: absolute;
         height: 17px;
-        left: 17%;
-        top: 990px;
+        left: -530px;
+        top: 350px;
         padding-bottom: 30px;
+        white-space: nowrap;
     }
-}
-
-/*Change the position*/
-footer{
-    margin: 20px;
-    padding-top: 90px;
-    display: table;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Montserrat', sans-serif;
 }
