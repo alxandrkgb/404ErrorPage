@@ -8,11 +8,7 @@
   <h3>
     <a href="https://404errorpage-devchallenge.netlify.app/">
       Demo
-    </a>
-    <span> | </span>
-    <a href="https://404errorpage-devchallenge.netlify.app/">
-      Solution
-    </a>
+     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY">
       Challenge
