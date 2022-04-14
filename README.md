@@ -29,7 +29,7 @@
 <!-- OVERVIEW -->
 
 ## Overview
-
+![screenshot](https://github.com/y0gyekye/404ErrorPage/blob/main/screenshot.png)
 - The demo is in the link above
 - I wanted to learn responsive web design
 - I have learnt something new with this challenge
