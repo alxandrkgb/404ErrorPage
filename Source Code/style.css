@@ -1,153 +1,191 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    box-sizing: border-box;
 }
 
-h1 {
-    margin: 20px;
-    font-size: 20px;
-    padding-left: 40px;
-    font-family: 'Inconsolata', monospace;
+
+/* unvisited link */
+
+a:link {
+    color: inherit;
 }
 
-.all-information {
+
+/* visited link */
+
+a:visited {
+    color: inherit;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #8d8d8d;
+}
+
+
+/* selected link */
+
+a:active {
+    color: inherit;
+}
+
+body {
     font-family: 'Space Mono', monospace;
+    margin: 0;
+    position: relative;
 }
 
-.scarecrow-image {
+nav {
     position: absolute;
-    left: 5.35%;
-    right: 57.21%;
-    top: 24.54%;
-    bottom: 34.03%;
+    top: 0;
+    left: 0;
+    margin: 40px 77px;
 }
 
-img {
-    width: 500px;
-    height: 400px;
-    float: left;
-    margin: 0px 65px;
-}
-
-
-/* I have bad news for you*/
-
-h2 {
-    position: absolute;
-    width: 586px;
-    height: 190px;
-    left: 735px;
-    top: 155px;
-    font-style: normal;
+nav h1 {
+    font-family: 'Inconsolata', monospace;
     font-weight: 700;
-    font-size: 64px;
-    line-height: 95px;
-    letter-spacing: -0.035em;
-    color: #333333;
+    margin: 0;
 }
 
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
-/* Page may be removed */
+main div {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+}
 
-p {
-    position: absolute;
-    width: 381px;
-    height: 108px;
-    left: 736px;
-    top: 370px;
-    font-style: normal;
+.image {
+    width: 85%;
+    height: auto;
+    margin: auto;
+}
+
+div h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0;
+}
+
+div p {
+    width: 70%;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.035em;
-    color: #4F4F4F;
+    font-size: 1.5rem;
+    margin: 36px 0 64px;
 }
 
-
-/*Back to Homepage*/
-
-button {
-    position: absolute;
-    width: 216px;
-    height: 68px;
-    left: 740px;
-    top: 530px;
-    background: #333333;
-}
-
-button:hover {
+div button {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 24px 44px;
+    background-color: #333;
+    color: #fff;
+    border: none;
     cursor: pointer;
-    background: #706b6b;
-    transition: 0.3s ease-in;
 }
 
-footer p {
+div button:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+footer {
     position: absolute;
-    width: 287px;
-    height: 17px;
-    left: 577px;
-    top: 800px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    white-space: nowrap;
-    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: #BDBDBD;
 }
 
-@media only screen and (max-width: 620px) {
-    .all-information {
-        all: initial;
+@media (max-width: 1200px) {
+    main div:nth-child(2) {
+        width: 45%;
     }
-    img {
-        all: initial;
-        position: absolute;
-        float: none;
-        width: 200%;
-        top: -120px;
-        left: 30px;
-        right: 10px;
-        margin-top: 70px;
-        margin-bottom: 30px;
-        padding-top: 50px;
+    div h1 {
+        font-size: 3rem;
     }
-    .information-container {
-        all: initial;
-        position: absolute;
-        float: top;
+    div p {
+        font-size: 1.1rem;
     }
-    h2 {
+    div button {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main div:nth-child(2) {
+        width: 40%;
+    }
+    div h1 {
+        font-size: 2rem;
+    }
+    div p {
+        font-size: 0.7rem;
+    }
+    div button {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    * {
+        margin: 0;
+    }
+    body {
+        margin: 0 25px;
+    }
+    nav {
+        position: relative;
+        margin: 20px 0;
+    }
+    main {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 50px 0;
+    }
+    main div {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+    main div:nth-child(2) {
+        width: 100%;
+    }
+    .image {
+        width: 90%;
+    }
+    div h1 {
         font-size: 48px;
-        font-family: 'Space Mono';
-        line-height: 71px;
-        width: 350px;
-        height: 142px;
-        left: 24px;
-        top: 407px;
     }
-    p {
-        /*position: absolute;*/
-        width: 328px;
-        height: 81px;
-        left: 23px;
-        top: 579px;
-        font-family: 'Space Mono', monospace;
+    div p {
+        width: 80%;
+        font-size: 18px;
+        margin: 30px 0 65px;
     }
-    button {
-        width: 216px;
-        height: 68px;
-        left: 24px;
-        top: 770px;
+    div button {
+        font-size: 14px;
     }
     footer {
-        all: initial;
-        position: absolute;
-        height: 17px;
-        left: -530px;
-        top: 350px;
-        padding-bottom: 30px;
-        white-space: nowrap;
+        position: relative;
+        height: 50px;
     }
 }
